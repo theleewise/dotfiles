@@ -1,0 +1,60 @@
+{
+    "window.zoomLevel": 2,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "razor": "html"
+    },
+    "editor.minimap.enabled": true,
+    "showMusicMetrics": false,
+    "showGitMetrics": false,
+    "showWeeklyRanking": false,
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    },
+    "yaml.schemas": {
+        "file:///Users/leewise/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "workbench.panel.defaultLocation": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.formatOnPaste": true,
+    "prettier.disableLanguages": [
+        "vue",
+        "react",
+        "javascriptreact",
+        "yaml",
+        "yml"
+    ],
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.cursorWidth": 1,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "branch-create:command"
+    ],
+    "php.suggest.basic": false,
+    "VSCodeCounter.exclude": [
+        "**/.gitignore",
+        "**/.vscode/**",
+        "**/node_modules/**",
+        "**/*.min.js",
+        "**/*.map",
+        "**/*.svg",
+        "**/*.jpg",
+        "**/*.gif",
+        "**/*.png",
+        "**/*.min.css",
+        "**/*.license.txt",
+        "**/package-lock.json"
+    ],
+    "markdown.extension.toc.levels": "2..3",
+    "workbench.iconTheme": "material-icon-theme",
+}

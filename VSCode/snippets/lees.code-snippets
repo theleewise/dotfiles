@@ -1,0 +1,152 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "scope": "js,javascript,ts,typescript,react",
+    "body": "console.log('%c ${1:Foo}: %c ${2:Bar}','background: #ddd; color: #000; padding: 4px; border-radius: 2px 0 0 2px;','background: #6f6; color: #000; padding: 4px; border-radius: 0 2px 2px 0;');"
+  },
+  "Section": {
+    "prefix": "/s",
+    "scope": "css,scss,sass,js,javascript",
+    "body": "\n\n\n\n\n/*------------------------------------*\\\n\t#${1:SECTION}\n\\*------------------------------------*/\n\n"
+  },
+  "Sub-Section": {
+    "prefix": "/ss",
+    "scope": "css,scss,sass,js,javascript",
+    "body": "\n\n/* #${1:SUB-SECTION}\n------------------------------------*/\n\n"
+  },
+  "SVG Icon": {
+    "prefix": "svgicon",
+    "scope": "html,php,twig,asp,aspx,ascx",
+    "body": "<svg class=\"${1:svg-icon}\" height=\"${2:1em}\" width=\"${3:1em}\" viewBox=\"${4:0 0 0 0}\"><use xlink:href=\"#${5:icon-id}\"></use></svg>"
+  },
+  "Media Query": {
+    "prefix": "mq",
+    "scope": "css,scss,sass,less",
+    "body": "@media $1(${2:min-width}: $3){\n\t$4\n}"
+  },
+  "Placeholder Image URL": {
+    "prefix": "placeimg",
+    "scope": "html,php,twig,ascx,aspx",
+    "body": "https://picsum.photos/${1:200}/${2:300}"
+  },
+  "Hi Mom": {
+    "prefix": "himom",
+    "scope": "html,php,twig,asp,aspx,ascx",
+    "body": [
+      "<!--",
+      "       _____",
+      "      (  HI )",
+      "      ( MOM )",
+      "      /¯¯¯¯¯",
+      "     o /",
+      "     /\\",
+      "      /\\",
+      "-->"
+    ]
+  },
+  "Our Lamb has Conquered": {
+    "prefix": "jflag",
+    "scope": "html,php,twig,asp,aspx,ascx",
+    "body": [
+      "          ████████████████",
+      "        ██                 ██",
+      "      ██           █         ██",
+      "    ██           █████         ██",
+      "  ██               █             ██",
+      " ██           ███  ███            ██",
+      "██          █████  ████            ██",
+      "██             ██  █               ██",
+      " ██            ███████            ██",
+      "  ██          █ █  ████          ██",
+      "    ██       █  █  ███         ██",
+      "      ██        █  █         ██",
+      "        ██                 ██",
+      "          ████████████████" 
+    ]
+  },
+  "New React Component": {
+    "prefix": "newcomponent",
+    "scope": "js,javascript,react,jsx",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "class ${1:[ComponentName]} extends React.Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t${2:[CODE]}",
+      "\t\t)",
+      "\t}",
+      "}",
+      "export default ${1:[ComponentName]};"
+    ]
+  },
+  "Hide IE Select Arrow": {
+    "prefix": "iehidearrow",
+    "scope": "css,scss,sass",
+    "body": [
+      "select::-ms-expand { display: none; } // Remove default arrow for IE"
+    ]
+  },
+  "Wordpress Custom Post Type": {
+    "prefix": "cpt",
+    "scope": "php",
+    "body": [
+"// Register Custom Post Type - ${1:Post Type General Name}",
+"function custom_post_type_${3:post_type_slug}() {",
+"",
+"\t\\$labels = array(",
+"\t\t'name'                  => _x( '${1:Post Type General Name}', 'Post Type General Name', 'text_domain' ),",
+"\t\t'singular_name'         => _x( '${2:Post Type Singular Name}', 'Post Type Singular Name', 'text_domain' ),",
+"\t\t'menu_name'             => __( '${1:Post Type General Name}', 'text_domain' ),",
+"\t\t'name_admin_bar'        => __( '${2:Post Type Singular Name}', 'text_domain' ),",
+"\t\t'archives'              => __( 'Item Archives', 'text_domain' ),",
+"\t\t'attributes'            => __( 'Item Attributes', 'text_domain' ),",
+"\t\t'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),",
+"\t\t'all_items'             => __( 'All Items', 'text_domain' ),",
+"\t\t'add_new_item'          => __( 'Add New Item', 'text_domain' ),",
+"\t\t'add_new'               => __( 'Add New', 'text_domain' ),",
+"\t\t'new_item'              => __( 'New Item', 'text_domain' ),",
+"\t\t'edit_item'             => __( 'Edit Item', 'text_domain' ),",
+"\t\t'update_item'           => __( 'Update Item', 'text_domain' ),",
+"\t\t'view_item'             => __( 'View Item', 'text_domain' ),",
+"\t\t'view_items'            => __( 'View Items', 'text_domain' ),",
+"\t\t'search_items'          => __( 'Search Item', 'text_domain' ),",
+"\t\t'not_found'             => __( 'Not found', 'text_domain' ),",
+"\t\t'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),",
+"\t\t'featured_image'        => __( 'Featured Image', 'text_domain' ),",
+"\t\t'set_featured_image'    => __( 'Set featured image', 'text_domain' ),",
+"\t\t'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),",
+"\t\t'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),",
+"\t\t'insert_into_item'      => __( 'Insert into item', 'text_domain' ),",
+"\t\t'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),",
+"\t\t'items_list'            => __( 'Items list', 'text_domain' ),",
+"\t\t'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),",
+"\t\t'filter_items_list'     => __( 'Filter items list', 'text_domain' ),",
+"\t);",
+"\t\\$args = array(",
+"\t\t'label'                 => __( '${2:Post Type Singular Name}', 'text_domain' ),",
+"\t\t'description'           => __( '${2:Post Type Singular Name} Description', 'text_domain' ),",
+"\t\t'labels'                => \\$labels,",
+"\t\t'supports'              => false,",
+"\t\t'taxonomies'            => array( 'category', 'post_tag' ),",
+"\t\t'hierarchical'          => false,",
+"\t\t'public'                => true,",
+"\t\t'show_ui'               => true,",
+"\t\t'show_in_menu'          => true,",
+"\t\t'menu_position'         => 5,",
+"\t\t'menu_icon'             => 'dashicons-admin-post',", //https://developer.wordpress.org/resource/dashicons
+"\t\t'show_in_admin_bar'     => true,",
+"\t\t'show_in_nav_menus'     => true,",
+"\t\t'can_export'            => true,",
+"\t\t'has_archive'           => true,",
+"\t\t'exclude_from_search'   => false,",
+"\t\t'publicly_queryable'    => true,",
+"\t\t'capability_type'       => 'page',",
+"\t);",
+"\tregister_post_type( '${3:post_type_slug}', \\$args );",
+"",
+"}",
+"add_action( 'init', 'custom_post_type_${3:post_type_slug}', 0 );"
+    ]
+  }
+}

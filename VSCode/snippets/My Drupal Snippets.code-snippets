@@ -1,0 +1,83 @@
+{
+  "Drupal 7 Var Dump": {
+    "prefix": "d7vardump",
+    "scope": "php",
+    "body": "print '<pre>'; print_r(${1}); print '</pre>';"
+  },
+  "Drupal 7 Path to URI": {
+    "prefix": "d7uripath",
+    "scope": "php",
+    "body": "file_create_url(${1})"
+  },
+  "Drupal 7 Path to Theme": {
+    "prefix": "d7themepath",
+    "scope": "php",
+    "body": "path_to_theme()"
+  },
+  "Drupal 7 User Role Conditional": {
+    "prefix": "d7hasrole",
+    "scope": "php",
+    "body": [
+      "global \\$user;",
+      "// Check to see if $user has the administrator role.",
+      "if (in_array('${1:administrator}', array_values(\\$user->roles))) {",
+      "\t${2:// Do something.}",
+      "}"
+    ]
+  },
+  "Drupal 8 Site Name": {
+    "prefix": "d8sitename",
+    "scope": "twig",
+    "body": "{{ drupal_config('system.site', 'name') }}"
+  },
+  "Drupal 8 Node Image Field URL": {
+    "prefix": "d8imgurl",
+    "scope": "twig",
+    "body": "{{ file_url(node.$!1{field_image}.entity.fileuri) }}"
+  },
+  "Drupal 8 Node Field Multi Value": {
+    "prefix": "d8fieldmulti",
+    "scope": "twig",
+    "body": [
+      "{% if content.field_name[0] %}",
+      "\t<ul>",
+      "\t\t{% for key, item in content.field_name if key|first != '#' %}",
+      "\t\t\t<li>{{ item }}</li>",
+      "\t\t{% endfor %}",
+      "\t</ul>",
+      "{% endif %}"
+    ]
+  },
+  "Drupal 8 Field Link": {
+    "prefix": "d8fieldlink",
+    "scope": "twig",
+    "body": "<a class=\"${1:button}\" href=\"{{ ${2:content.field_name}[0]['#url'] }}\" {% if ${2:content.field_name}[0]['#url'].external %}target=\"_blank\"{% endif %}>{{ ${2:content.field_name}[0]['#title'] }}</a>"
+  },
+  "Drupal 8 Field Image Path": {
+    "prefix": "d8fieldimagepath",
+    "scope": "twig",
+    "body": "{{ file_url(${1:content.field_name}['#items'].entity.uri.value) }}"
+  },
+  "Drupal 8 Field Image Alt": {
+    "prefix": "d8fieldimagepath",
+    "scope": "twig",
+    "body": "{{ ${1:content}.field_${2:name}.alt }}"
+  },
+  "Drupal 8 JavaScript Behavior": {
+    "prefix": "d8js",
+    "scope": "js",
+    "body": [
+      "Drupal.behaviors.${1:behaviorName} = {",
+      "\tattach: function (${2:context}, ${3:settings}) {",
+      "\t\t$0",
+      "\t}",
+      "};"
+    ],
+    "description": "This inserts a Drupal 8 JS behavior."
+  },
+  "Drupal 8 Macro Import": {
+    "prefix": "d8macroimport",
+    "scope": "twig",
+    "body": "{% import '@${1:mytheme}/${2:macros.twig}' as ${3:macros} %}"
+  }
+}
