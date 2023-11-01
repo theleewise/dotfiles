@@ -1,0 +1,8 @@
+# Comment here
+0 9-18 * * 1-5 ~/Scripts/health.sh
+
+# Change the wallpaper every hour during work
+# 0 */1 * * * ~/Scripts/wallpapers.sh
+
+# Delete node_modules directory for inactive projects
+0 10 * * 1-5 wipe-modules ~/Documents/Code\ Projects 30 30; wipe-modules ~/Documents/Work/VACI 30

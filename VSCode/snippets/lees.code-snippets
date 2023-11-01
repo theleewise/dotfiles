@@ -1,8 +1,17 @@
 {
+  "Package Author": {
+    "scope": "json",
+    "body": "Lee Wise <me@theleewise.com> (https://theleewise.com)",
+  },
   "Console Log": {
     "prefix": "cl",
     "scope": "js,javascript,ts,typescript,react",
     "body": "console.log('%c ${1:Foo}: %c ${2:Bar}','background: #ddd; color: #000; padding: 4px; border-radius: 2px 0 0 2px;','background: #6f6; color: #000; padding: 4px; border-radius: 0 2px 2px 0;');"
+  },
+  "New Window": {
+    "prefix": "target",
+    "scope": "html,php,twig,pug,hbs,asp,aspx,ascx,yml",
+    "body": " target=\"_blank\" rel=\"noopener noreferer\"",
   },
   "Section": {
     "prefix": "/s",
@@ -29,19 +38,50 @@
     "scope": "html,php,twig,ascx,aspx",
     "body": "https://picsum.photos/${1:200}/${2:300}"
   },
-  "Hi Mom": {
-    "prefix": "himom",
-    "scope": "html,php,twig,asp,aspx,ascx",
+  "Easter Egg - Hi Mom (Comment)": {
+    "prefix": "egghimomcomment",
+    "scope": "html,php,twig,pug,asp,aspx,ascx",
     "body": [
       "<!--",
-      "       _____",
-      "      (  HI )",
-      "      ( MOM )",
-      "      /¯¯¯¯¯",
-      "     o /",
-      "     /\\",
-      "      /\\",
+      "   _____",
+      "  (  HI )",
+      "  ( MOM )",
+      "  /¯¯¯¯¯",
+      " o /",
+      " /|",
+      "  /\\",
       "-->"
+    ]
+  },
+  "Easeter Egg - Hi Mom (Console)": {
+    "prefix": "egghimomconsole",
+    "scope": "js,jsx,ts,tsx",
+    "body": [
+      "const a = `",
+      "    ________",
+      "   ( HI MOM )",
+      "   /¯¯¯¯¯¯¯¯",
+      "  O /",
+      " /|",
+      "  /\\",
+      "",
+      "`;",
+      "console.log(a);",
+    ]
+  },
+  "Easeter Egg - theleewise (Console)": {
+    "prefix": "eggnameconsole",
+    "scope": "js,jsx,ts,tsx",
+    "body": [
+      "const a = `",
+      "    ____  _   _          _                    _          ",
+      "   / __ \\| |_| |__   ___| | ___  _____      _(_)___  ___ ",
+      "  / / _\\` | __| '_ \\ / _ \\ |/ _ \\/ _ \\ \\ /\\ / / / __|/ _ \\",
+      " | | (_| | |_| | | |  __/ |  __/  __/\\ V  V /| \\__ \\  __/",
+      "  \\ \\__,_|\\__|_| |_|\\___|_|\\___|\\___| \\_/\\_/ |_|___/\\___|",
+      "   \\____/                                                ",
+      "`;                                                         ",
+      "console.log('%c' + a, 'color: #ff8924;');",
     ]
   },
   "Our Lamb has Conquered": {

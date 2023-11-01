@@ -10,3 +10,7 @@
 	clean = git-lfs clean -- %f
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = master
+[alias]
+	ac = commit -a -m
