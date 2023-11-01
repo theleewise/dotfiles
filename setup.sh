@@ -2,12 +2,12 @@
 
 # Create symlinks to dotfiles
 echo "Creating symlinks to dotfiles..."
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitignore ~/.gitignore
-ln -s ~/dotfiles/.hyper.js ~/.hyper.js
-ln -s ~/dotfiles/.npmrc ~/.npmrc
-ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
+ln -sf ~/dotfiles/.npmrc ~/.npmrc
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # Install Homebrew
 echo "Installing Homebrew..."
